@@ -391,51 +391,77 @@
            FEATURED RELEASE
         ===================================================== */
 
-  <!-- FEATURED RELEASE -->
+        .featured-section {
+            background:
+                radial-gradient(
+                    circle at 20% 50%,
+                    #65162F 0%,
+                    #3B0A18 42%,
+                    #21050D 100%
+                );
+        }
 
-<section class="featured-section">
+        .featured {
+            min-height: 500px;
 
-    <div class="featured">
+            display: grid;
 
-        <!-- COVER PHOTO -->
-        <div class="featured-art">
+            grid-template-columns: 1fr 1fr;
 
-            <img
-                src="images/vacation.jpg"
-                alt="KHAL & Mansa - Vacation">
+            gap: 60px;
 
-        </div>
+            align-items: center;
+        }
+
+        .featured-art {
+            aspect-ratio: 1;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7B203E,
+                    #390915 60%,
+                    #160208
+                );
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: 70px;
+
+            font-weight: 700;
+
+            letter-spacing: -3px;
+
+            box-shadow:
+                0 30px 80px rgba(0,0,0,0.3);
+        }
+
+        .featured-content h2 {
+            font-family: "Space Grotesk", sans-serif;
+
+            font-size: clamp(45px, 7vw, 90px);
+
+            line-height: .9;
+
+            margin-bottom: 25px;
+
+            letter-spacing: -4px;
+        }
+
+        .featured-content p {
+            color: rgba(255,255,255,0.62);
+
+            line-height: 1.8;
+
+            max-width: 500px;
+        }
 
 
-        <!-- RELEASE INFO -->
-        <div class="featured-content">
-
-            <div class="eyebrow">
-                FEATURED RELEASE
-            </div>
-
-            <h2>
-                VACATION
-            </h2>
-
-            <p>
-                Mansa & KHAL — Vacation.
-                New vibes. Same energy. A journey of freedom,
-                growth and good company.
-            </p>
-
-            <a
-                href="https://open.spotify.com/track/6aY7ufSWf6eWDmBx9khFAL?si=01548a6a8e7343d6"
-                target="_blank"
-                class="button">
-                LISTEN NOW
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
         /* =====================================================
            VIDEOS
         ===================================================== */
@@ -1027,51 +1053,52 @@
          FEATURED RELEASE
     ===================================================== -->
 
-   <!-- FEATURED RELEASE -->
+    <section class="featured-section">
 
-<section class="featured-section">
-
-    <div class="featured">
-
-        <!-- COVER PHOTO -->
-        <div class="featured-art">
-
-            <img
-                src="images/vacation.jpg"
-                alt="KHAL & Mansa - Vacation">
-
-        </div>
+        <div class="featured">
 
 
-        <!-- RELEASE INFO -->
-        <div class="featured-content">
+            <div class="featured-art">
 
-            <div class="eyebrow">
-                FEATURED RELEASE
+                4NOW
+
             </div>
 
-            <h2>
-                VACATION
-            </h2>
 
-            <p>
-                Mansa & KHAL — Vacation.
-                New vibes. Same energy. A journey of freedom,
-                growth and good company.
-            </p>
+            <div class="featured-content">
 
-            <a
-                href="https://open.spotify.com/track/6aY7ufSWf6eWDmBx9khFAL?si=be72c8f5335645f8"
-                target="_blank"
-                class="button">
-                LISTEN NOW
-            </a>
+                <div class="section-label">
+                    Featured Release
+                </div>
+
+                <h2>
+                    JUST<br>
+                    FOR NOW.
+                </h2>
+
+                <p>
+                    A moment. A feeling. A situation you know
+                    probably shouldn't continue — but you still
+                    can't let go.
+                </p>
+
+                <br>
+
+                <a
+                    href="https://open.spotify.com/track/7Dc8nKE5iPqyEQHX8plcxU?si=26597e9db8f24a49"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    Listen Now
+
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
 
 
     <!-- =====================================================
