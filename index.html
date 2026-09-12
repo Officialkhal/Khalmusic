@@ -764,11 +764,27 @@
                 gap: 40px;
             }
 
-            .featured-art {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
+          .featured-section {
+    padding: 80px 8%;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* COVER */
+
+.featured-art {
+    width: 320px;
+    height: 320px;
     flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .featured-art img {
@@ -777,13 +793,86 @@
     object-fit: cover;
     display: block;
 }
-    </style>
-</head>
+
+/* TEXT */
+
+.featured-content {
+    flex: 1;
+    max-width: 450px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+
+.featured-content h2 {
+    font-size: 48px;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
+}
+
+.featured-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* LISTEN NOW */
+
+.featured-content .button {
+    display: inline-block;
+    padding: 13px 28px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.featured-content .button:hover {
+    background: #800020;
+    border-color: #800020;
+    color: white;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(128,0,32,0.45);
+}
 
 
-<body>
+/* MOBILE */
 
+@media (max-width: 700px) {
 
+    .featured {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .featured-art {
+        width: 260px;
+        height: 260px;
+    }
+
+    .featured-content h2 {
+        font-size: 38px;
+    }
+
+}
     <!-- =====================================================
          NAVIGATION
     ===================================================== -->
