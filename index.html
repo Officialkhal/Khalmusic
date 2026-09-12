@@ -391,94 +391,39 @@
            FEATURED RELEASE
         ===================================================== */
 
- .featured-section {
-            background:
-                radial-gradient(
-                    circle at 20% 50%,
-                    #65162F 0%,
-                    #3B0A18 42%,
-                    #21050D 100%
-                );
-        }
-
-        .featured {
-            min-height: 500px;
-
-            display: grid;
   <!-- FEATURED RELEASE -->
 
-            grid-template-columns: 1fr 1fr;
-
-            gap: 60px;
-
-            align-items: center;
-        }
-
-        .featured-art {
-            aspect-ratio: 1;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #7B203E,
-                    #390915 60%,
-                    #160208
-                );
-
-            display: flex;
-
-            align-items: center;
-            justify-content: center;
-
-            font-family: "Space Grotesk", sans-serif;
-
-            font-size: 70px;
 <section class="featured-section">
 
-            font-weight: 700;
     <div class="featured">
 
-            letter-spacing: -3px;
         <!-- COVER PHOTO -->
         <div class="featured-art">
 
-            box-shadow:
-                0 30px 80px rgba(0,0,0,0.3);
-        }
             <img
                 src="images/vacation.jpg"
                 alt="KHAL & Mansa - Vacation">
 
-        .featured-content h2 {
-            font-family: "Space Grotesk", sans-serif;
         </div>
 
-            font-size: clamp(45px, 7vw, 90px);
 
-            line-height: .9;
         <!-- RELEASE INFO -->
         <div class="featured-content">
 
-            margin-bottom: 25px;
             <div class="eyebrow">
                 FEATURED RELEASE
             </div>
 
-            letter-spacing: -4px;
-        }
             <h2>
                 VACATION
             </h2>
 
-        .featured-content p {
-            color: rgba(255,255,255,0.62);
             <p>
                 Mansa & KHAL — Vacation.
                 New vibes. Same energy. A journey of freedom,
                 growth and good company.
             </p>
 
-            line-height: 1.8;
             <a
                 href="https://open.spotify.com/track/6aY7ufSWf6eWDmBx9khFAL?si=01548a6a8e7343d6"
                 target="_blank"
@@ -486,8 +431,6 @@
                 LISTEN NOW
             </a>
 
-            max-width: 500px;
-        }
         </div>
 
     </div>
@@ -823,115 +766,44 @@
                 gap: 40px;
             }
 
-          .featured-section {
-    padding: 80px 8%;
-}
+            .featured-art {
+                font-size: 55px;
+            }
 
-.featured {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
 
-/* COVER */
+            .about {
+                grid-template-columns: 1fr;
 
-.featured-art {
-    width: 320px;
-    height: 320px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 4px;
-}
+                gap: 40px;
+            }
 
-.featured-art img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
+            .about-image {
+                max-width: 500px;
 
-/* TEXT */
+                margin: auto;
 
-.featured-content {
-    flex: 1;
-    max-width: 450px;
-}
+                width: 100%;
+            }
 
-.eyebrow {
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-    opacity: 0.7;
-}
+            footer {
+                flex-direction: column;
 
-.featured-content h2 {
-    font-size: 48px;
-    margin: 0 0 15px;
-    letter-spacing: 2px;
-}
+                gap: 12px;
 
-.featured-content p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
+                text-align: center;
+            }
+        }
 
-/* LISTEN NOW */
-
-.featured-content .button {
-    display: inline-block;
-    padding: 13px 28px;
-
-    background: transparent;
-    color: white;
-
-    border: 1px solid rgba(255,255,255,0.6);
-    border-radius: 5px;
-
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
-    transition: all 0.3s ease;
-}
-
-/* HOVER */
-
-.featured-content .button:hover {
-    background: #800020;
-    border-color: #800020;
-    color: white;
-
-    transform: translateY(-4px);
-
-    box-shadow: 0 10px 25px rgba(128,0,32,0.45);
-}
+    </style>
+</head>
 
 
-/* MOBILE */
+<body>
 
-@media (max-width: 700px) {
 
-    .featured {
-        flex-direction: column;
-        text-align: center;
-        gap: 35px;
-    }
-
-    .featured-art {
-        width: 260px;
-        height: 260px;
-    }
-
-    .featured-content h2 {
-        font-size: 38px;
-    }
-
-}
     <!-- =====================================================
          NAVIGATION
     ===================================================== -->
